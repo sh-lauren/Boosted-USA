@@ -126,7 +126,7 @@ body {
 
 .first-banner {
 	height: 100vh;
-	background: url(/img/main-block-img.jpg);
+	background: url(img/main-block-img.jpg);
 	/* height: calc(100vh - 95px); */
 	background-position:  center;
 	background-repeat: no-repeat;
