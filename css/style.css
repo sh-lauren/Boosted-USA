@@ -1,4 +1,3 @@
-/* transition: color 3s; */
 
 /* --------Обнуление-------- */
 *,
@@ -235,7 +234,7 @@ body {
 	margin-bottom: 20px;
 	width: 580px;
 	height: 580px;
-	background-image: url(/img/second-banner/img-1.jpg);
+	background-image: url(../img/second-banner/img-1.jpg);
 	
 }
 .second-banner-left-img {}
@@ -263,7 +262,7 @@ body {
 	margin-bottom: 20px;
 	width: 580px;
 	height: 580px;
-	background-image: url(/img/second-banner/img-2.jpg);
+	background-image: url(../img/second-banner/img-2.jpg);
 }
 .second-banner-right-img {}
 
@@ -289,7 +288,7 @@ body {
 /*---------THIRD---BANNER---------------------------------------------------*/
 .third-banner-container {
 	height: 100vh;
-	background-image: url(/img/third-banner/pic-1.jpg);
+	background-image: url(../img/third-banner/pic-1.jpg);
 	background-position:  center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -362,14 +361,14 @@ body {
 
 .element-1 {
 	margin: 44px 20px 45px 130px;
-	background-image: url(/img/section-1/1.jpg);
+	background-image: url(../img/section-1/1.jpg);
 	width: 380px;
 	height: 380px;
 }
 
 .element-2 {
 	margin: 44px 40px 45px 0px;
-	background-image: url(/img/section-1/2.jpg);
+	background-image: url(../img/section-1/2.jpg);
 	width: 380px;
 	height: 380px;
 }
@@ -412,7 +411,7 @@ body {
 .card-3 {
 	width: 480px;
 	height: 480px;
-	background-image: url(/img/section-2/1.jpg.jpeg);
+	background-image: url(../img/section-2/1.jpg.jpeg);
 	opacity: 0.9;
 	background-position:  center;
 	background-repeat: no-repeat;
@@ -457,7 +456,7 @@ body {
 }
 
 .card-2 {
-	background-image: url(/img/section-2/2.jpg.jpeg);
+	background-image: url(../img/section-2/2.jpg.jpeg);
 	opacity: 0.9;
 	background-position:  center;
 	background-repeat: no-repeat;
@@ -465,7 +464,7 @@ body {
 }
 
 .card-3 {
-	background-image: url(/img/section-2/3.jpeg);
+	background-image: url(../img/section-2/3.jpeg);
 	opacity: 0.9;
 	background-position:  center;
 	background-repeat: no-repeat;
