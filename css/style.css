@@ -54,7 +54,7 @@ body {
 
 
 .header-notification-link  {
-	display: none;  /* ? FINTD OUT ? */
+	display: inline-block;  /* ? FINTD OUT ? */
 	color: #FBFBFB;
 	text-decoration: none;
 	font-size: 12px;
