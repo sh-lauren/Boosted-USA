@@ -47,7 +47,6 @@ body {
 /*---------Header-notification-----------------------------------------------------*/
 
 .header-notification {
-	display: none;
 	height: 29px;
 	background-color: #000000;
 	text-align: center;
