@@ -1,3 +1,4 @@
+/* transition: color 3s; */
 
 /* --------Обнуление-------- */
 *,
@@ -30,14 +31,15 @@ h6 {
 }
 html,
 body {
+	/*?    text-rendering: optimizeLegibility;  ALEX.P  */
+	text-size-adjust: 100%;
 	height: 100%;
-	line-height: 1;
-	background: #fafafa;
+	line-height: 1.5;
 	font-size: 14px;
-	color: #252b42;
 	font-weight: 400;
 	font-style: normal;
 	font-family: Roboto, sans-serif;
+	
 }
 /* -----END OF RESET ------------------------------------------ */
 
@@ -77,7 +79,7 @@ body {
 	display: flex;
 	justify-content: space-between;
 	background: #FFF;
-	height: 66px;
+	height: 75px;
 	align-items: center;
 }
 
@@ -85,12 +87,31 @@ body {
 	padding: 15px 11px;
 }
 
-.header-link {
-	color: #000000;
-	text-transform: uppercase;
-	line-height: 21px;
-	letter-spacing: 1px;
+a.header-logo-link {
+	transition: opacity .3s ease-in;
 }
+
+.header-logo-link:hover {
+	opacity: .7;
+}
+
+.header-link {
+	color: #000;
+	text-transform: uppercase;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	transition: color .3s ease-in-out;
+	font-weight: 500;
+	font-size: 14px;
+	font-style: normal;
+	font-family: Roboto,sans-serif;
+}
+
+
+.header-link:hover {
+	color: #ff4a32;
+}
+
 
 .left-container {
 	display: flex;
@@ -113,8 +134,8 @@ body {
 
 .header-logo {
 	margin-left: 11px;
-	width: 160px;
-	height: 36px;
+	width: 200px;
+	height: 45px;
 }
 .user-icon-logo {
 	margin-right: 10px;
@@ -148,35 +169,58 @@ body {
 	letter-spacing: 1px;
 }
 
+/* Создаю контейнер оболочку для кнопок  */
 .first-banner-buttons-container {
 	margin-top: 22px;
 	display: flex;
 	justify-content: space-around;
 
-}
-.first-banner-button {
-	background-color: #FF4A32;
+}     
+
+/* Делаю из <a> - ССЫЛКИ вид кнопки  */
+.first-banner-button-link {
+	display: inline-block;
+	padding: 5px 47px 5px 47px;
 	border-radius: 35px;
-	height: 33px;
-	width: 201px;
-	line-height: 22px;
+	color: #fff;
+	background-color: #FF4A32;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 23px;
 	margin-right: 12px;
-}
-
-.second-banner-button {
-	background-color: #FF4A32;
-	border-radius: 35px;
-	height: 33px;
-	width: 201px;
-	line-height: 22px;
-
-}
-
-.banner-button-links {
-	color: #FFF;
 	text-transform: uppercase;
-	
+	transition: background-color .2s ease-in-out;
 }
+
+.first-banner-button-link:hover {
+	background-color: #606060;
+ }
+
+
+
+
+
+/* 
+a.footer-menu-item-link {
+	color: black;
+	transition: color .3s;
+}
+
+
+.footer-menu-item-link:hover {
+	color: #ff4a32;
+}
+
+
+
+
+*/
+
+
+
+
+
+
 
 /*---------Сooperation---block---------------------------------------------------*/
 
@@ -291,7 +335,7 @@ body {
 	background-image: url(../img/third-banner/pic-1.jpg);
 	background-position:  center;
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: contain;
 
 }
 .third-banner-sub-title-1 {
@@ -364,6 +408,9 @@ body {
 	background-image: url(../img/section-1/1.jpg);
 	width: 380px;
 	height: 380px;
+	background-position:  center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 .element-2 {
@@ -371,6 +418,9 @@ body {
 	background-image: url(../img/section-1/2.jpg);
 	width: 380px;
 	height: 380px;
+	background-position:  center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .element-3 {
 }
@@ -412,8 +462,8 @@ body {
 	width: 480px;
 	height: 480px;
 	background-image: url(../img/section-2/1.jpg.jpeg);
-	opacity: 0.9;
-	background-position:  center;
+	opacity: 0.8;
+	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
 	margin-bottom: 55px;
@@ -457,7 +507,7 @@ body {
 
 .card-2 {
 	background-image: url(../img/section-2/2.jpg.jpeg);
-	opacity: 0.9;
+	opacity: 0.8;
 	background-position:  center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -465,7 +515,7 @@ body {
 
 .card-3 {
 	background-image: url(../img/section-2/3.jpeg);
-	opacity: 0.9;
+	opacity: 0.8;
 	background-position:  center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -529,10 +579,10 @@ body {
 
 /*---------footer----------------------------------------------------*/
 
-.footer {
+.footer-container {
 	display: flex;
 	padding-top: 50px;
-	background-color: #F7F7F7;
+	background-color: #f1f1f1;;
 	height: 329px;
 }
 .footer-logo {
@@ -548,32 +598,43 @@ body {
 }
 
 .middle-title {
+	color: #000;
 	font-size: 20px;
-   font-weight: 900;
-	margin-bottom: 5px;
+   font-weight: 600;
+	margin-bottom: 10px;
 	line-height: 30px;
 }
-.middle-list {
-	font-size: 13px;
+
+
+.middle-list-item {
+	font-size: 14px;
 	line-height: 21px;
+
 }
+
 .right {
 	width: 380px;
 	height: 229px;
 	margin-right: 130px;
 	margin-bottom: 20px;
+}
 
-}
+
 .right-title {
-	font-weight: 600;
 	font-size: 20px;
-	line-height: 30px;
+	font-weight: 600;
+	line-height: 1.5;
 	margin-bottom: 10px;
+	
 }
+
 .right-subtitle-1 {
+	font-family: Roboto,sans-serif;
+   font-weight: 400;
+	color: #000;
 	font-size: 14px;
 	margin-bottom: 20px;
-	line-height: 21px;
+	line-height: 1.5;
 }
 .right-subtitle-2 {
 	padding-top: 19px;
@@ -583,33 +644,22 @@ body {
 }
 
 /*---------footer----------------------------------------------------*/
-.footer-bottom {
+.footer-bottom-container {
 	background-color: #FFFFFF;
-	font-size: 13px;
 	line-height: 19px;
-
 	height: 70px;
 	padding-bottom: 20px;
 	padding-top: 20px;
+	
 }
 
 a.footer-bottom-link {
 	color: #ff4a32;
 }
 
-
-
-a.footer-menu-item-link {
-	color: black;
-	transition: color .3s;
-}
-
-
 .footer-menu-item-link {
 	font-size: 13px;
 	line-height: 21px;
-	
-
 }
 .footer-menu-item-link:hover {
 	color: #ff4a32;
@@ -621,11 +671,12 @@ a.footer-menu-item-link {
 
 }
 
-
-.right-subtitle-text {
-	font-size: 14px;
-	line-height: 1.5;
+a.footer-menu-item-link {
+	color: black;
+	transition: color .3s ease-in-out;
 }
+
+
 
 .right-title-text {
 	font-size: 20px;
@@ -633,10 +684,108 @@ a.footer-menu-item-link {
 	font-family: Roboto,sans-serif;
 }
 
+.right-subtitle-text {
+	font-size: 14px;
+	line-height: 1.5;
+}
 
 
 
+/*---------Products------------------------------------------------------*/
+.products-container {
+	background-color: #fff;
+	display: flex;
+	justify-content: space-evenly;
+	margin-bottom: 55px;
 
+}
+
+.img-for-card-1 {
+	background-image: url(../img/test/boosted-stealth-bottom_2000x.png);
+}
+.img-for-card-2 {
+	background-image: url(../img/test/boosted-mini-x_1_2000x.png);
+}
+.img-for-card-3 {
+	background-image: url(../img/test/222.png);
+}
+.img-for-card-1, 
+.img-for-card-2, 
+.img-for-card-3 {
+	background-color: rgb(236, 236, 236);
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: bottom center;
+	height: 505px;
+	width: 404px;
+	position: static;
+	border-radius: 18px;
+	transition: all .3s cubic-bezier(0,0,.5,1);
+}
+.img-for-card-2:hover {
+	transform: scale(1.02);
+	box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
+.img-for-card-1:hover {
+		 transform: scale(1.02);
+		 box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+ }
+
+ .img-for-card-3:hover {
+	transform: scale(1.02);
+	box-shadow: 2px 4px 12px rgb(0 0 0 / 8%);
+}
+
+.first-text-block-for-card_1,
+.first-text-block-for-card_2,
+.first-text-block-for-card_3 {
+	height: 24px;
+	padding-left: 30px;
+	padding-top: 32px;
+	font-size: 12px;
+	line-height: 1.33337;
+	letter-spacing: -.01em;
+	font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	font-weight: 600;
+	color: #6e6e73;
+}
+.second-text-block-for-card_1,
+.second-text-block-for-card_2,
+.second-text-block-for-card_3 {
+	height: 40px;
+	padding-left: 30px;
+	font-size: 28px;
+	line-height: 1.14286;
+	font-weight: 600;
+	letter-spacing: .007em;
+	font-family: SF Pro Display,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #1d1d1f;
+	padding-top: 25px;
+	margin-bottom: 18px;
+}
+.second-text-block-for-card_2 {
+	height: 5px;
+}
+
+.third-text-block--price-for-card_1,
+.third-text-block--price-for-card_2,
+.third-text-block--price-for-card_3 {
+	padding-top: 42px;
+	padding-left: 30px;
+	font-size: 17px;
+	line-height: 1.23536;
+	font-weight: 400;
+	letter-spacing: -.022em;
+	font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color: #1d1d1f;
+}
+
+.first-text-block-for-card_3,
+.second-text-block-for-card_3,
+.third-text-block--price-for-card_3 {
+  
+}
 
 
 
