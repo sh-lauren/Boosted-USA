@@ -7,6 +7,7 @@
    <meta name="description" content="Free Web tutorials"> <!-- Define a description of your web page: --> 
    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Setting the viewport to make your website look good on all devices: -->
    <title>Boosted USA</title>
+
    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
    <link rel="stylesheet" href="css/style.css">
 </head>
@@ -20,8 +21,7 @@
         
         <header class="header-wrapper">
             <div class="left-container">
-                <a href="#">
-                    <img class="header-logo" src="img/header-logo.svg" alt="logo" >
+                <a class="header-logo-link" href="#"><img class="header-logo" src="/img/logo.png" alt="logo" >
                 </a>
                 <ul class="header-links-wrapper">
                     <li>
@@ -43,10 +43,10 @@
             </div>
             <div class="right-container">
                 <a class="user-icon-logo" href="#">
-                    <img src="img/icons/user-icon.svg" alt="user-icon">
+                    <img src="/img/icons/user-icon.svg" alt="user-icon">
                 </a>
                 <a href="#">
-                    <img src="img/icons/cart-icon.svg" alt="cart-icon">
+                    <img src="/img/icons/cart-icon.svg" alt="cart-icon">
                 </a>
             </div> 
         </header>
@@ -60,16 +60,12 @@
             </p>
             <div class="first-banner-buttons-container" >
                 <div>
-                    <button class="first-banner-button">
-                        <a class="banner-button-links" href="#">
-                            BOOSTED REVS
-                        </a>
-                    </button>
-                     <button class="second-banner-button">
-                        <a class="banner-button-links" href="#">
-                            BOOSTED BOARDS
-                        </a> 
-                    </button>
+                    <a class="first-banner-button-link" href="https://boostedusa.com">
+                        BOOSTED REVS
+                    </a>
+                    <a class="first-banner-button-link" href="https://boostedusa.com">
+                        BOOSTED BOARDS
+                    </a>
                 </div>
             </div>
          </div>
@@ -199,6 +195,39 @@
                     </div>
         </section>
 
+
+        <!-- ************************************ -->
+
+        <section class="products-container">
+            
+                <div class="img-for-card-1">
+                    <h3 class="first-text-block-for-card_1">NEW  V2 DUAL</h3>
+                    <div class="second-text-block-for-card_1">V2 Dual Pro.<br>Oh. So. Pro.</div>
+                    <div class="third-text-block--price-for-card_1">
+                        From $999.00  or <br>$41.62 /mo. <br> for 24 mo. 
+                        before trade-in *
+                    </div>
+                </div>
+                <div class="img-for-card-2">
+                    <h3 class="first-text-block-for-card_2">BOOSTED MINI X</h3>
+                    <div class="second-text-block-for-card_2">Mega power. Mini sized.</div>
+                    <div class="third-text-block--price-for-card_2">
+                        From $499 or $41.58/mo. for 12 mo.
+                    </div>
+                </div>
+                <div class="img-for-card-3">
+                    <h3 class="first-text-block-for-card_3">BOOSTED STEALTH</h3>
+                    <div class="second-text-block-for-card_3">STEALTH Pro.<br>Your new superpower.</div>
+                    <div class="third-text-block--price-for-card_3">
+                        From $999.00  or $41.62 /mo. for 24 mo. <br>
+                        before trade-in *
+                    </div>
+                </div>
+        </section>
+
+        <!-- ************************************ -->
+
+
         <section class="section-video">
             <div class="section-video-left" >
                 <iframe width="540" height="304" src="https://www.youtube.com/embed/78bXV1ZqQWI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -219,8 +248,7 @@
             </div>
             <div class="advantages-subtitle">
                 Boosted is known for its premium <br>
-                performance boards offering a next-level <br>
-                 experience.
+                performance boards offering a next-level experience.
             </div>
         </div>
         <div class="advantages-item-1">
@@ -264,60 +292,61 @@
         </div>
         </section>
 
-        <footer class="footer">
+        <footer class="footer-container">
             <div class="footer-logo">
                 <a href="#">
                     <img src="img/footer/01.png" alt="">
                 </a>
-            
             </div>
+            
+
 
             <div class="middle">
                 <div class="middle-title">
                     Explore
                 </div>
                 <div class="middle-list">
-                    <ul class="footer-menu-list">
-                        <li>
+                    <ul>
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Electric Skateboards</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Electric Scooters</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Accessories</a>
                         </li>
-                            <a class="footer-menu-item-link" href="#">FAQs</a>
+                        <li class="middle-list-item"> 
+                        <a class="footer-menu-item-link" href="#">FAQs</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Warranty</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Quick Start Guide</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Contact</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Gift Card</a>
                         </li>
-                        <li> 
+                        <li class="middle-list-item"> 
                             <a class="footer-menu-item-link" href="#">Accessibility Statement</a>
                         </li>
                     </ul>
                 </div>
             </div>
+
             <div class="right">
                 <div class="right-title">
-                    <p class="right-title-text">
-                        About Boosted USA
-                    </p>
+                    About Boosted USA
                 </div>
                 <div class="right-subtitle-1">
                     <p class="right-subtitle-text">
-                        Boosted empowers people everywhere to commute across <br>
-                        their cities, campuses, and communities in ways that were<br>
-                        never before possible. Boosted is solving one of the biggest<br>
+                        Boosted empowers people everywhere to commute across 
+                        their cities, campuses, and communities in ways that were
+                        never before possible.    Boosted is solving one of the biggest
                          problems people face each day: transportation.
                     </p>
                 </div>
@@ -329,7 +358,7 @@
             </div>
         </footer>
 
-        <footer class="footer-bottom">
+        <footer class="footer-bottom-container">
             <div class="footer-bottom-left">
                 © 2021 <a class="footer-bottom-link" href="#">Boosted USA</a>. All Rights Reserved. 
                 <a class="footer-bottom-link" href="#">Terms of Service</a>. Built by 
