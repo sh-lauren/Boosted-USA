@@ -44,14 +44,12 @@ body {
 /* -----END OF RESET ------------------------------------------ */
 
 /* -----sticky ------------------------------------------ */
+
 .sticky {
 	position: fixed;
 	top: 0;
 	width: 100%;
  }
-
-
-
 
 /*---------Header-notification-----------------------------------------------------*/
 
@@ -146,8 +144,25 @@ body {
 	height: 45px;
 }
 .user-icon-logo {
+	
 	margin-right: 10px;
 }
+
+/* -------------Hover для SVG -------------*/
+
+.user-icon-logo:hover {
+	fill: #ff4a32;
+	}
+
+	.cart-icon:hover {
+		fill: red;
+	}
+
+	.cart-icon {
+		transition: fill .6s ease;
+		-webkit-transition: fill 0.6s ease;
+	}
+	
 
 
 /*---------Frist---Banner---------------------------------------------------*/
