@@ -153,15 +153,18 @@ body {
 .user-icon-logo:hover {
 	fill: #ff4a32;
 	}
+	.user-icon-logo {
+		transition: fill .3s ease-in-out;
+	}
 
 	.cart-icon:hover {
 		fill: red;
 	}
-
+	
 	.cart-icon {
-		transition: fill .6s ease;
-		-webkit-transition: fill 0.6s ease;
+		transition: fill .3s ease-in-out;
 	}
+
 	
 
 
